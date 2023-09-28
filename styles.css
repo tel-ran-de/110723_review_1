@@ -1,31 +1,37 @@
-/*  выделяет все элементы на странице */
-* {
+*,
+html,
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
 }
 
-/* html,
-body {
-  height: 100%;
-} */
-/* 
-% - он занимает процент от родительского компонента
-vh - viewport height
-vw - viewport width
-*/
-.section-container {
-  background: #23424a;
-  height: 100vh;
+header {
+  position: relative;
+}
+button {
+  border: none;
 }
 
-.grid-container {
-  row-gap: 40px;
-  column-gap: 20px;
+nav {
+  display: inline;
 }
-/* gap = row-gap column-gap*/
-/* ряды / колонки */
+nav,
+ul,
+li {
+  display: inline-block;
+  border: 1px solid red;
+  height: 50px;
+}
 
-.grid-container1 {
-  gap: 40px 20px;
+li {
+  width: 100px;
+}
+
+button {
+  /* float: right */
+  position: absolute;
+  right: 0;
 }
